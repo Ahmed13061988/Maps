@@ -15,6 +15,10 @@ rest
   .set(true, "We are open")
   .set(false, "We are closed");
 
-console.log(rest.get("name"));
-console.log(rest.get(2));
-console.log(rest.get("close"));
+//console.log(rest.get("name"));
+//console.log(rest.get(2));
+//console.log(rest.get("close"));
+//console.log(rest.get(true));
+
+const time = 21;
+console.log(rest.get("open" === time ? true : false));
