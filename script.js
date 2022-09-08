@@ -64,7 +64,7 @@ const questions = new Map([
   [2, "Java"],
   [3, "JavaScript"],
   ["Correct", 3],
-  [true, "Correct"],
+  [true, "Correct 🎉"],
   [false, "Try again"],
 ]);
 
@@ -79,16 +79,15 @@ for (const [key, value] of questions) {
   }
 }
 
-const choose = prompt("What is your answer ?");
+const choose = Number(prompt("What is your answer ?"));
 
-const answer = function (choose) {
-  if (Number(choose) === 3) {
-    console.log(`You got the correct answer ${questions.get(3)}`);
-  } else if (Number(choose) === 2 || Number(choose) === 1) {
-    console.log("Wrong answer!");
-  } else {
-    console.log("Invalid Entry");
-  }
-};
-
-console.log(answer(choose));
+// const answer = function (choose) {
+//   if (choose === 3) {
+//     console.log(`${questions.get(true)}`);
+//   } else if (choose === 2 || choose === 1) {
+//     console.log(`${questions.get(false)}`);
+//   } else {
+//     console.log("Invalid Entry");
+//   }
+// };
+console.log(questions.get(questions.get("Correct") === choose));
