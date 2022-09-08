@@ -32,3 +32,5 @@ rest.delete(2);
 console.log(rest);
 
 console.log(rest.size);
+
+//console.log(rest.clear());
