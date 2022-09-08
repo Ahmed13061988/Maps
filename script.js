@@ -34,3 +34,6 @@ console.log(rest);
 console.log(rest.size);
 
 //console.log(rest.clear());
+
+rest.set([1, 2], "Test");
+console.log(rest);
