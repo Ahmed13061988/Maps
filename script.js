@@ -43,6 +43,21 @@ console.log(rest.get(arr)); // to make this work we need to create a variable fo
 
 ///////////////////////
 
+const openingHours = {
+  thu: {
+    open: 11,
+    close: 12,
+  },
+  fri: {
+    open: 12,
+    close: 2,
+  },
+  sat: {
+    open: 12,
+    close: 0,
+  },
+};
+
 const questions = new Map([
   ["question", "What is the best programming language in the world"],
   [1, "C"],
@@ -54,3 +69,7 @@ const questions = new Map([
 ]);
 
 console.log(questions);
+
+const hoursMap = new Map(Object.entries(openingHours));
+
+console.log(hoursMap);
