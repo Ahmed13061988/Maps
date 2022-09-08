@@ -30,3 +30,5 @@ console.log(rest.has("categories"));
 rest.delete(2);
 
 console.log(rest);
+
+console.log(rest.size);
