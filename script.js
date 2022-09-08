@@ -73,3 +73,8 @@ console.log(questions);
 const hoursMap = new Map(Object.entries(openingHours));
 
 console.log(hoursMap);
+for (const [key, value] of questions) {
+  if (typeof key === "number") {
+    console.log(key, value);
+  }
+}
