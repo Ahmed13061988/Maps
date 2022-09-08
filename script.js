@@ -34,6 +34,8 @@ console.log(rest);
 console.log(rest.size);
 
 //console.log(rest.clear());
-
-rest.set([1, 2], "Test");
+const arr = [1, 2];
+rest.set(arr, "Test");
 console.log(rest);
+
+console.log(rest.get(arr)); // to make this work we need to create a variable for the array and then call it
