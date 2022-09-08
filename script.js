@@ -21,4 +21,8 @@ rest
 //console.log(rest.get(true));
 
 const time = 21;
-console.log(rest.get("open" === time ? true : false));
+//console.log(rest.get("open" < time ? rest.get(true) : rest.get(false)));
+
+console.log(rest.get(time > rest.get("open") && time < rest.get("close")));
+
+console.log(rest.has("categories"));
