@@ -79,7 +79,8 @@ for (const [key, value] of questions) {
   }
 }
 
-const choose = Number(prompt("What is your answer ?"));
+//const choose = Number(prompt("What is your answer ?"));
+const choose = 3;
 
 // const answer = function (choose) {
 //   if (choose === 3) {
@@ -91,3 +92,10 @@ const choose = Number(prompt("What is your answer ?"));
 //   }
 // };
 console.log(questions.get(questions.get("Correct") === choose));
+
+//Convert map to array
+
+console.log([...questions]);
+//console.log(questions.entries());
+console.log([...questions.keys()]);
+console.log([...questions.values()]);
