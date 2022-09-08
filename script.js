@@ -72,9 +72,23 @@ console.log(questions);
 
 const hoursMap = new Map(Object.entries(openingHours));
 
-console.log(hoursMap);
+console.log(questions.get("question"));
 for (const [key, value] of questions) {
   if (typeof key === "number") {
-    console.log(key, value);
+    console.log(`Answer ${key}: ${value}`);
   }
 }
+
+const choose = prompt("What is your answer ?");
+
+const answer = function (choose) {
+  if (Number(choose) === 3) {
+    console.log(`You got the correct answer ${questions.get(3)}`);
+  } else if (Number(choose) === 2 || Number(choose) === 1) {
+    console.log("Wrong answer!");
+  } else {
+    console.log("Invalid Entry");
+  }
+};
+
+console.log(answer(choose));
